@@ -28,6 +28,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func launchLightsButtonDidTapped() {
+        redLightsView.isHidden.toggle()
+        
+        
+        launchLightsButton.setTitle(
+            redLightsView.isHidden ? "Next" : "Next",
+            for: .normal
+        )
+        
         
     }
     
